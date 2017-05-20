@@ -1,0 +1,17 @@
+STATE S1
+#TRANSITION $g( playstarted )$ S3
+TRANSITION $$ S2
+
+INPUTACTION $$ printf("entered s1\n")
+
+STATE S2
+TRANSITION $$ S3
+INPUTACTION $$ printf("entered s2\n")
+
+STATE S3
+TRANSITION $$ S1
+INPUTACTION $$ printf("entered s3\n")
+
+
+
+INITIAL S1
